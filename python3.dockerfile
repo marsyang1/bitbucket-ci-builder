@@ -28,7 +28,7 @@ RUN apk --no-cache add \
         wget \
         unzip \
         py3-pip \
-        # for base64
+        # for ci running with base64 function
         coreutils 
         
 # Create dirs and users
