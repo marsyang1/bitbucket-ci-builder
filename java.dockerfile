@@ -30,7 +30,7 @@ RUN apk --no-cache add \
         openjdk8 \
         gradle \
         maven \
-        # for base64
+        # for BitBucket pipeline step can using base64
         coreutils     
         
 # Create dirs and users
