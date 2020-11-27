@@ -1,8 +1,8 @@
-FROM alpine:3.10
+FROM alpine:3.12.1
 MAINTAINER MarsYang
            
 # install google cloud sdk
-ARG CLOUD_SDK_VERSION=261.0.0
+ARG CLOUD_SDK_VERSION=319.0.0
 ENV CLOUD_SDK_VERSION=$CLOUD_SDK_VERSION
 
 ENV PATH /google-cloud-sdk/bin:$PATH
