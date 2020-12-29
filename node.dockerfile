@@ -1,7 +1,7 @@
 # use node 10 , 
 # using mhart image , https://github.com/mhart/alpine-node
-# Node Version: 10.23.0
-FROM mhart/alpine-node:slim-10.23.0
+# Node Version: 10.23
+FROM mhart/alpine-node:slim-10.23
 MAINTAINER MarsYang
 ARG CLOUD_SDK_VERSION=321.0.0
 ## INSTALL GCLOUD SDK
