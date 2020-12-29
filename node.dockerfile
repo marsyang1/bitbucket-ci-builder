@@ -1,14 +1,16 @@
-# use node 10
-FROM mhart/alpine-node:10
+# use node 10 , 
+# using mhart image , https://github.com/mhart/alpine-node
+# Node Version: 10.23.0
+FROM mhart/alpine-node:slim-10.23.0
 MAINTAINER MarsYang
-ARG CLOUD_SDK_VERSION=319.0.0
+ARG CLOUD_SDK_VERSION=321.0.0
 ## INSTALL GCLOUD SDK
 ENV CLOUD_SDK_VERSION=$CLOUD_SDK_VERSION
 
 ENV PATH /google-cloud-sdk/bin:$PATH
 RUN apk --no-cache add \
         curl \
-        python \
+        python3 \
         py-crcmod \
         bash \
         libc6-compat \
