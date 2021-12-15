@@ -1,5 +1,5 @@
 FROM marsyang1/bitbucket-ci-builder:node
-MAINTAINER MarsYang
+LABEL org.opencontainers.image.authors="marsyang1"
 
 RUN  apk --no-cache add \
      wget \

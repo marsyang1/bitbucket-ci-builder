@@ -1,5 +1,5 @@
 FROM marsyang1/bitbucket-ci-builder:base
-MAINTAINER MarsYang
+LABEL org.opencontainers.image.authors="marsyang1"
 
 ## install java build tools
 RUN apk --no-cache add \

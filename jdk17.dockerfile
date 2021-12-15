@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.authors="marsyang1"
 RUN apk --no-cache add \
         wget \
         unzip \
-        openjdk11 \
+        openjdk17 \
         gradle \
         maven \
         # for BitBucket pipeline step can using base64
