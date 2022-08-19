@@ -63,6 +63,15 @@ docker push marsyang1/bitbucket-ci-builder:node-runner
 
 ```
 
+TAG node14-runner
+
+```
+
+docker build -f node14_runner.dockerfile -t marsyang1/bitbucket-ci-builder:node14-runner .
+docker push marsyang1/bitbucket-ci-builder:node14-runner
+
+```
+
 TAG python3 
 
 ```
