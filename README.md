@@ -45,6 +45,15 @@ docker push marsyang1/bitbucket-ci-builder:node
 
 ```
 
+TAG node14
+
+```
+
+docker build -f node14.dockerfile -t marsyang1/bitbucket-ci-builder:node14 .
+docker push marsyang1/bitbucket-ci-builder:node14
+
+```
+
 TAG node-runner
 
 ```
