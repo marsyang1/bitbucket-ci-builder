@@ -34,7 +34,6 @@ RUN apk add --update openssh curl bash ttf-dejavu tzdata
 RUN apk --no-cache add \
         wget \
         unzip \
-        openjdk11 \
         gradle \
         maven \
         # for BitBucket pipeline step can using base64
