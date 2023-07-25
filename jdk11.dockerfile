@@ -6,8 +6,9 @@ RUN apk --no-cache add \
         wget \
         unzip \
         openjdk11 \
-        gradle \
-        maven \
+        # apk install gradle will install openjdk17 , disable apk add gradle and maven
+        # gradle \
+        # maven \
         # for BitBucket pipeline step can using base64
         coreutils     
         
