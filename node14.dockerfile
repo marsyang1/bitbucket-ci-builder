@@ -32,7 +32,8 @@ RUN apk --no-cache add \
 
 # Create dirs and users
 RUN mkdir -p /opt/atlassian/bitbucketci/agent/build
-RUN adduser -s /bin/sh -u 1000 -D pipelines
+# Create user pipeline , shell:/bin/sh , uid:1001
+RUN adduser -s /bin/sh -u 1001 -D pipelines
 
 # Default to UTF-8 file.encoding
 ENV LANG=C.UTF-8 \

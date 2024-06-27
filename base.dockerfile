@@ -1,9 +1,9 @@
-FROM alpine:3.18.2
+FROM alpine:3.20
 LABEL org.opencontainers.image.authors="marsyang1"
            
 # install google cloud sdk
 # https://cloud.google.com/sdk/docs/release-notes
-ARG CLOUD_SDK_VERSION=439.0.0
+ARG CLOUD_SDK_VERSION=482.0.0
 ENV CLOUD_SDK_VERSION=$CLOUD_SDK_VERSION
 
 ENV PATH /google-cloud-sdk/bin:$PATH
