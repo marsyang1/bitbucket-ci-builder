@@ -1,8 +1,8 @@
 # use node 10 , 
 # using mhart image v14 , https://github.com/mhart/alpine-node 
-FROM mhart/alpine-node:14.17
+FROM node:14-alpine
 LABEL org.opencontainers.image.authors="marsyang1"
-ARG CLOUD_SDK_VERSION=398.0.0
+ARG CLOUD_SDK_VERSION=482.0.0
 ## INSTALL GCLOUD SDK
 ENV CLOUD_SDK_VERSION=$CLOUD_SDK_VERSION
 
