@@ -86,7 +86,7 @@ TAG node18
 
 ```
 
-docker build -f node18.dockerfile -t marsyang1/bitbucket-ci-builder:node18 .
+docker build -f node18.dockerfile --platform linux/amd64 -t marsyang1/bitbucket-ci-builder:node18 .
 docker push marsyang1/bitbucket-ci-builder:node18
 
 ```
@@ -95,7 +95,7 @@ TAG node18-runner
 
 ```
 
-docker build -f node18_runner.dockerfile -t marsyang1/bitbucket-ci-builder:node18-runner .
+docker build -f node18_runner.dockerfile --platform linux/amd64 -t marsyang1/bitbucket-ci-builder:node18-runner .
 docker push marsyang1/bitbucket-ci-builder:node18-runner
 
 ```
