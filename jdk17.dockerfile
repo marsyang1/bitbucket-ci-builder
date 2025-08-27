@@ -16,10 +16,12 @@ RUN apk --no-cache add \
 RUN mkdir -p /opt/atlassian/bitbucketci/agent/build
 RUN adduser -s /bin/sh -u 1000 -D pipelines
 
+RUN java -version && echo "JAVA_HOME=$JAVA_HOME"
+
 # Default to UTF-8 file.encoding
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
     LANGUAGE=C.UTF-8
 
 WORKDIR /opt/atlassian/bitbucketci/agent/build
-ENTRYPOINT /bin/sh
+ENTRYPOINT ["/bin/sh"]

@@ -5,7 +5,7 @@ LABEL org.opencontainers.image.authors="marsyang1"
 RUN apk --no-cache add \
         wget \
         unzip \
-        openjdk8 \
+        openjdk21 \
         # apk install gradle will install openjdk17 , disable apk add gradle and maven
         # gradle \
         # maven \
