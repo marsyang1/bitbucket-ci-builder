@@ -1,7 +1,7 @@
 FROM marsyang1/bitbucket-ci-builder:ubi10-base-java
 LABEL org.opencontainers.image.authors="marsyang1"
 
-ENV JDK_VERSION=liberica-8u462+11
+ENV JDK_VERSION=temurin-8.0.462+8
 
 # 透過 asdf 安裝 OpenJDK 8
 RUN asdf install java ${JDK_VERSION} \
