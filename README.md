@@ -18,6 +18,15 @@ docker push marsyang1/bitbucket-ci-builder:ubi10-base
 
 ```
 
+TAG ubi10 base java
+
+```
+
+docker build --platform linux/amd64 -f ubi10.base.java.dockerfile -t marsyang1/bitbucket-ci-builder:ubi10-base-java .
+docker push marsyang1/bitbucket-ci-builder:ubi10-base-java
+
+```
+
 TAG java
 
 ```
