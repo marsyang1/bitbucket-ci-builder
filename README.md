@@ -9,6 +9,15 @@ docker push marsyang1/bitbucket-ci-builder:base
 
 ```
 
+TAG ubi10 base
+
+```
+
+docker build --platform linux/amd64 -f ubi10.base.dockerfile -t marsyang1/bitbucket-ci-builder:ubi10-base .
+docker push marsyang1/bitbucket-ci-builder:ubi10-base
+
+```
+
 TAG java
 
 ```
@@ -42,6 +51,42 @@ TAG java21
 
 docker build --platform linux/amd64 -f jdk21.dockerfile -t marsyang1/bitbucket-ci-builder:java21 .
 docker push marsyang1/bitbucket-ci-builder:java21
+
+```
+
+TAG ubi10-jdk8
+
+```
+
+docker build --platform linux/amd64 -f jdk8.ubi10.dockerfile -t marsyang1/bitbucket-ci-builder:ubi10-jdk8 .
+docker push marsyang1/bitbucket-ci-builder:ubi10-jdk8
+
+```
+
+TAG ubi10-jdk11
+
+```
+
+docker build --platform linux/amd64 -f jdk11.ubi10.dockerfile -t marsyang1/bitbucket-ci-builder:ubi10-jdk11 .
+docker push marsyang1/bitbucket-ci-builder:ubi10-jdk11
+
+```
+
+TAG ubi10-jdk17
+
+```
+
+docker build --platform linux/amd64 -f jdk17.ubi10.dockerfile -t marsyang1/bitbucket-ci-builder:ubi10-jdk17 .
+docker push marsyang1/bitbucket-ci-builder:ubi10-jdk17
+
+```
+
+TAG ubi10-jdk21
+
+```
+
+docker build --platform linux/amd64 -f jdk21.ubi10.dockerfile -t marsyang1/bitbucket-ci-builder:ubi10-jdk21 .
+docker push marsyang1/bitbucket-ci-builder:ubi10-jdk21
 
 ```
 
